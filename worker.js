@@ -1,8 +1,8 @@
 /*
  * 🌐 Creao.AI + Cloudflare Proxy Bridge
  * -------------------------------------
- * A lightweight Cloudflare Worker that connects your Creao.AI frontend
- * to Cloudflare’s global edge network for speed, protection, and scalability.
+ * A lightweight Cloudflare Worker that connects  custom domains to your Creao.AI frontend
+ * It uses Cloudflare global edge network for speed, protection, and scalability and page rules
  *
  * ⚙️ CONFIGURATION:
  *  - Set BASE to your Creao.AI project URL (must end with "/dist/").
@@ -11,7 +11,7 @@
  *      const BASE = "https://dede3phc22dgx.cloudfront.net/builds/yyyyyy-yyyyy-yyyyyy-yyyyy-yy/xxxx/xxxx/dist/";
  *
  * 💡 TIPS:
- *  - Use Cloudflare Cache to offload traffic and protect your project at the DNS level.
+ *  - Use Cloudflare Cache to offload traffic and protect your project at the DNS/Firewall level.
  *  - Handle up to 100,000 free requests per day with Cloudflare’s global edge.
  *  - Combine Workers with Cloudflare services like:
  *      • R2 — Object storage
@@ -19,7 +19,9 @@
  *      • D1 — Serverless SQL
  *      • Queues & Pipelines — Event-driven workflows
  *
- * 🔗 Bridge maintained by: ipsbruno  •  bsbruno@pm.me
+ *  ⚪ Bridge by: bsbruno@pm.me
+ *  💚 Discord: @ipsbruno_1995
+ *
  * Pull requests are welcome
  */
 
